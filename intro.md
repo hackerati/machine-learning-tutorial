@@ -1,6 +1,7 @@
 #Big Data
 
 ##Example Task
+
 Let's say we have a table, and we want the sum of the values for each row.
 If this table is sufficiently small, it makes sense to store and process the data on one machine.
 
