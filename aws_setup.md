@@ -1,14 +1,9 @@
-Initial AWS Setup
-=================
 
-Log into AWS
-------------
-
+##Log into AWS
 1. [AWS Login URL](https://chardhack.signin.aws.amazon.com/console)
-2. Use the name and temporary password in your email.
+2. Use the name and temporary password in your email
 
-Install Spark Locally
----------------------
+##Install Spark Locally
 
 1. Go to the [spark](http://www.apache.org/dyn/closer.cgi/spark/spark-1.2.1/spark-1.2.1-bin-hadoop2.4.tgz) download page
 2. Download
@@ -17,8 +12,7 @@ Install Spark Locally
   * *NIX: cd ~/Downloads; tar zxvf spark-1.2.1-bin-hadoop2.4.tgz
   * Windows: Install OS X or *NIX
 
-Set up the Spark Cluster Login Scripts
---------------------------------------
+##Set up the Spark Cluster Login Scripts
 
 1. Place your acces key id and secret access key in the empty quotes in the first two lines
 2. Put SOMETHING in the AWSPROFILE line
@@ -34,5 +28,4 @@ cd /opt/spark/ec2
 ./spark-ec2 --key-pair=${MYKEYPAIR} --identity-file=${MYKEYPAIRFILE} login hackademy
 ```
 
-Verify That you can Create EC2 Cluster
---------------------------------------
+##Verify That you can Create EC2 Cluster
