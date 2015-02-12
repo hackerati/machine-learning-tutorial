@@ -1,6 +1,7 @@
 #Big Data
 
-For an example task, let's say we have a table, and we want the sum of the values for each row.
+##Example Task
+Let's say we have a table, and we want the sum of the values for each row.
 If this table is sufficiently small, it makes sense to store and process the data on one machine.
 
 However, as the size of the table gets very large, the time it takes to load the whole table and process each row becomes exceedingly long.
