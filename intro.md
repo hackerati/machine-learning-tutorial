@@ -8,4 +8,4 @@ However, as the size of the table gets very large, the time it takes to load the
 
 Instead of storing the table and processing it on one machine, we can use the Hadoop Distributed File System (HDFS), which stores files in smaller parts ("blocks") across many machines. These small blocks can be loaded quickly, and procesed in parallel on the nodes in the cluster.
 
-*Reduce and *map* are some of the most common operations performed on data stored in HDFS. In our example task, we are *reducing* rows to one value by summing. *Map* takes a row, and transforms each value in the row, producing a new row.
+*Reduce* and *map* are some of the most common operations performed on data stored in HDFS. In our example task, we are *reducing* rows to one value by summing. *Map* takes a row, and transforms each value in the row, producing a new row.
