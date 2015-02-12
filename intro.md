@@ -9,4 +9,4 @@ However, as the size of the table gets very large, the time it takes to load the
 Instead of storing the table and processing it on one machine, we can use the Hadoop Distributed File System (HDFS), which stores files in smaller parts ("blocks") across many machines.
 These small blocks can be loaded quickly, and procesed in parallel on the nodes in the cluster.
 
-HDFS is commonly used for two types of tasks: __reduce__, and __map__. In our example task, we are __reducing__ rows to one value by summing. __Map__ takes a row, and transforms each value in the row, producing a new row.
+Aside from storing large volumes of data in a distributed manner, HDFS is commonly used for two types of tasks: __reduce__, and __map__. In our example task, we are __reducing__ rows to one value by summing. __Map__ takes a row, and transforms each value in the row, producing a new row.
