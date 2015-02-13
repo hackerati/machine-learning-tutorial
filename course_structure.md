@@ -1,14 +1,14 @@
 # Before Course
 ## Materials
-- Train / Validate / Evaluate datasets
-- AWS Credits/Credentials ready to give to students
+    - Train / Validate / Evaluate datasets
+    - AWS Credits/Credentials ready to give to students
 
 ## Students
-- Sign up, Login to AWS
-- Download AWS CLI
-- Get Key/Secret, put in AWS CLI or bash script
-- Install Apache Spark locally
-- Verify you can create an EC2 instance (make sure to shut it down!)
+    - Sign up, Login to AWS
+    - Download AWS CLI
+    - Get Key/Secret, put in AWS CLI or bash script
+    - Install Apache Spark locally
+    - Verify you can create an EC2 instance (make sure to shut it down!)
 
 # Course Structure
 ## (20 minutes) Introduction
