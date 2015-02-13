@@ -64,7 +64,7 @@ Navigate to the python directory for this course, and enter:
 virtualenv env
 ```
 
-Now, install the requirements (which include python tools for data science and machine learning):
+Now, install the requirements, which include python tools for data science and machine learning:
 
 ```bash
 pip install -r requirements.txt
