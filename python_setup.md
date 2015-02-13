@@ -45,7 +45,7 @@ sudo apt-get install python-dev
 **Fedora**:
 
 ```bash
-sudo yum install python-dev
+sudo yum install python-devel
 ```
 
 This will prevent some confusing issues where you can't install python packages.
