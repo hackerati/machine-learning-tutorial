@@ -1,7 +1,7 @@
 #Preparing python for machine learning
 
 ## If python is not installed
-[Download and install](https://www.python.org/download/releases/2.7/) using the installer appropriate for your OS.
+[Download and install](https://www.python.org/download/releases/2.7/) using the installer appropriate for your OS. *Note: we use python 2.7 for this course.*
 
 ## Make sure you have pip
 Follow the installation instructions on the [pip website](https://pip.pypa.io/en/latest/installing.html#install-or-upgrade-pip).
