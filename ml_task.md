@@ -6,7 +6,7 @@ which can be attached to an Amazon EC2 virtual machine. To set up, you create an
 
 The challenge is to create the best possible recommendation system. Various features are included for the songs (tempo, title, year, [bag-of-words] lyrics, loudness, mfcc-like features, etc.)
 
-Listening history of users is also provided.
+Listening history of users is also provided. You can play around with classifiers and feature sets, and try to find the best combination for optimal recommendation accuracy.
 
 
 [1] Thierry Bertin-Mahieux, Daniel P.W. Ellis, Brian Whitman, and Paul Lamere. 
