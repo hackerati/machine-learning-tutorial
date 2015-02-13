@@ -8,6 +8,8 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
+**Linux**: You are good to go.
+
 ## If python is not installed
 
 [Download and install](https://www.python.org/download/releases/2.7/) using the installer appropriate for your OS.
@@ -15,23 +17,35 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 *Note: we use python 2.7 for this course.*
 
 ## Make sure you have pip
-Follow the installation instructions on the [pip website](https://pip.pypa.io/en/latest/installing.html#install-or-upgrade-pip).
-
-You will download a script called get-pip.py, and then run it as follows:
+**OS X**:
 
 ```bash
-python get-pip.py
+brew install pip
+```
+**Debian/Ubuntu**:
+
+```bash
+sudo apt-get install python-pip
 ```
 
-If you get a permissions error, then rerun as:
+**Fedora**:
+
 ```bash
-sudo python get-pip.py
+sudo yum install python-pip
 ```
 
 ## Generally a good idea for python development on Linux
 
+**Debian/Ubuntu**:
+
 ```bash
 sudo apt-get install python-dev
+```
+
+**Fedora**:
+
+```bash
+sudo yum install python-dev
 ```
 
 This will prevent some confusing issues where you can't install python packages.
