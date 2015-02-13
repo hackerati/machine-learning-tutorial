@@ -1,0 +1,14 @@
+#Preparing python for machine learning
+
+## Generally a good idea for python development on Linux
+
+```bash
+sudo apt-get install python-dev
+```
+
+## Set up your virtual environment
+
+Download requirements.txt, put it in some directory, navigate to that directory in the terminal, then enter:
+```bash
+virtualenv env
+```
