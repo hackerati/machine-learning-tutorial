@@ -1,6 +1,15 @@
 #Preparing python for machine learning
 
+## Use a package manager
+
+**OS X**: Install [Homebrew](http://brew.sh/)
+
+```bash
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 ## If python is not installed
+
 [Download and install](https://www.python.org/download/releases/2.7/) using the installer appropriate for your OS.
 
 *Note: we use python 2.7 for this course.*
