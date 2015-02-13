@@ -23,6 +23,8 @@ sudo python get-pip.py
 sudo apt-get install python-dev
 ```
 
+This will prevent some confusing issues where you can't install python packages.
+
 ## Set up your virtual environment
 
 Install virtualenv:
