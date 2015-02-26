@@ -33,6 +33,18 @@ Movie information is in "movies.dat" in the following format:
 MovieID::Title::Genres
 ```
 
+## Create Training Examples
+Run rateMovies, and then enter your ratings for some sample movies:
+```
+python bin/rateMovies
+```
+These ratings will be compared with ratings of other users, in order to recommend movies that you may like.
+
+## Check out the code
+
+MovieLensALS.py is the main file that does the model learning and recommendation.
+
+
 
 
 
