@@ -20,6 +20,15 @@ The implementation in MLlib has the following parameters:
 
 **alpha** is a parameter applicable to the implicit feedback variant of ALS that governs the baseline confidence in preference observations.
 
+## Data Set
+We will use "ratings.dat" and "movies.dat". Ratings are in "ratings.dat" in the following format:
+"""
+UserID::MovieID::Rating::Timestamp
+"""
+Movie information is in "movies.dat" in the following format:
+"""
+MovieID::Title::Genres
+"""
 
 
 
