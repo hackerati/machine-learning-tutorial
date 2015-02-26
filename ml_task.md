@@ -2,14 +2,20 @@
 
 We will be using the [MovieLens dataset](http://grouplens.org/datasets/movielens/) in order to recommend movies to you, based on a few example ratings that you will fill out. We will use the 1 million ratings version of the dataset, which has ratings from 6000 users on 4000 movies. 
 
-The recommendation techique is called collaborative filtering. The idea is to fill in the missing entries of a user - movie_rating association matrix. MLlib currently supports model-based collaborative filtering, in which users and products are described by a small set of latent factors that can be used to predict missing entries. MLlib uses the alternating least squares (ALS) algorithm to learn these latent factors. The implementation in MLlib has the following parameters:
+The recommendation techique is called collaborative filtering. The idea is to fill in the missing entries of a user - movie_rating association matrix. MLlib currently supports model-based collaborative filtering, in which users and products are described by a small set of latent factors that can be used to predict missing entries.
 
-numBlocks is the number of blocks used to parallelize computation (set to -1 to auto-configure).
+We will use MLlib and the alternating least squares (ALS) algorithm to learn these latent factors. The implementation in MLlib has the following parameters:
+
+**numBlocks** is the number of blocks used to parallelize computation (set to -1 to auto-configure).
 rank is the number of latent factors in the model.
-iterations is the number of iterations to run.
-lambda specifies the regularization parameter in ALS.
-implicitPrefs specifies whether to use the explicit feedback ALS variant or one adapted for implicit feedback data.
-alpha is a parameter applicable to the implicit feedback variant of ALS that governs the baseline confidence in preference observations.
+
+**iterations** is the number of iterations to run.
+
+**lambda** specifies the regularization parameter in ALS.
+
+**implicitPrefs** specifies whether to use the explicit feedback ALS variant or one adapted for implicit feedback data.
+
+**alpha** is a parameter applicable to the implicit feedback variant of ALS that governs the baseline confidence in preference observations.
 
 
 
