@@ -44,9 +44,14 @@ These ratings will be compared with ratings of other users, in order to recommen
 
 MovieLensALS.py is the main file that does the model learning and recommendation.
 
+'For any Spark computation, we first create a SparkConf object and use it to create a SparkContext object. Since we will be using spark-submit to execute the programs in this tutorial (more on spark-submit in the next section), we only need to configure the executor memory allocation and give the program a name, e.g. “MovieLensALS”, to identify it in Spark’s web UI. In local mode, the web UI can be access at localhost:4040 during the execution of a program.'
 
-
-
+```
+conf = SparkConf() \
+  .setAppName("MovieLensALS") \
+  .set("spark.executor.memory", "2g")
+sc = SparkContext(conf=conf)
+```
 
 
 # Machine Learning Project: Music Recommendation!
