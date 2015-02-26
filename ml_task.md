@@ -53,7 +53,23 @@ conf = SparkConf() \
 sc = SparkContext(conf=conf)
 ```
 
+## Running the code
+spark-submit is the recommended tool for running Spark applications.
 
+```
+/spark/bin/spark-submit MovieLensALS.py [usb root directory]/data/movielens/medium/ ../personalRatings.txt
+```
+
+## Splitting the data
+In machine learning tasks, we usually split the data into three non-overlapping sets: training, validation, and test.
+
+We will use MLlib’s ALS to train a MatrixFactorizationModel, which takes a RDD[(user, product, rating)] object as input. ALS has training parameters as shown above. To determine a good combination of the training parameters, we split the data into three non-overlapping subsets, based on the last digit of the timestamp, and cache them. We will train multiple models based on the training set, select the best model on the validation set based on RMSE (Root Mean Squared Error), and finally evaluate the best model on the test set. We also add your ratings to the training set to make recommendations for you. We hold the training, validation, and test sets in memory by calling cache because we need to visit them multiple times.
+
+
+## Training
+Among the training paramters of ALS, the most important ones are rank, lambda (regularization constant), and number of iterations.
+
+Ideally, we want to try a large number of combinations of them in order to find the best one. Due to time constraint, we will test only 8 combinations resulting from the cross product of 2 different ranks (8 and 12), 2 different lambdas (1.0 and 10.0), and two different numbers of iterations (10 and 20). We use the provided method computeRmse to compute the RMSE on the validation set for each model. The model with the smallest RMSE on the validation set becomes the one selected and its RMSE on the test set is used as the final metric.
 # Machine Learning Project: Music Recommendation!
 
 We will use the [million song dataset](http://www.kaggle.com/c/msdchallenge/data) [1]. 
