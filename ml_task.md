@@ -57,7 +57,7 @@ sc = SparkContext(conf=conf)
 spark-submit is the recommended tool for running Spark applications.
 
 ```
-/spark/bin/spark-submit MovieLensALS.py [usb root directory]/data/movielens/medium/ ../personalRatings.txt
+~/spark/bin/spark-submit MovieLensALS.py hdfs:/data/ml-1m ~/machine-learning/bin/personalRatings.txt
 ```
 
 ## Splitting the data
@@ -70,17 +70,3 @@ We will use MLlib’s ALS to train a MatrixFactorizationModel, which takes a RDD
 Among the training paramters of ALS, the most important ones are rank, lambda (regularization constant), and number of iterations.
 
 Ideally, we want to try a large number of combinations of them in order to find the best one. Due to time constraint, we will test only 8 combinations resulting from the cross product of 2 different ranks (8 and 12), 2 different lambdas (1.0 and 10.0), and two different numbers of iterations (10 and 20). We use the provided method computeRmse to compute the RMSE on the validation set for each model. The model with the smallest RMSE on the validation set becomes the one selected and its RMSE on the test set is used as the final metric.
-# Machine Learning Project: Music Recommendation!
-
-We will use the [million song dataset](http://www.kaggle.com/c/msdchallenge/data) [1]. 
-This is available as an [Amazon Public Dataset snapshot](http://aws.amazon.com/datasets/6468931156960467), 
-which can be attached to an Amazon EC2 virtual machine. To set up, you create an EBS disk instance from snap-5178cf30.
-
-The challenge is to create the best possible recommendation system. Various features are included for the songs (tempo, title, year, [bag-of-words] lyrics, loudness, mfcc-like features, etc.)
-
-Listening history of users is also provided. You can play around with classifiers and feature sets, and try to find the best combination for optimal recommendation accuracy.
-
-
-[1] Thierry Bertin-Mahieux, Daniel P.W. Ellis, Brian Whitman, and Paul Lamere. 
-The Million Song Dataset. In Proceedings of the 12th International Society
-for Music Information Retrieval Conference (ISMIR 2011), 2011.
