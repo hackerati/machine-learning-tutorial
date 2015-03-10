@@ -1,5 +1,5 @@
 #Preparing python for development
-#This useful in general, not only for this course
+##This useful in general; not only for this course
 
 ## If python is not installed
 
