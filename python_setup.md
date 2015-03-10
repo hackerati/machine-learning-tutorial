@@ -1,5 +1,5 @@
-#Preparing python for machine learning
-#CHANGE THIS BASED ON SPARK
+#Preparing python for development
+#This useful in general, not only for this course
 
 ## If python is not installed
 
@@ -59,13 +59,13 @@ Install virtualenv:
 pip install virtualenv
 ```
 
-Navigate to the python directory for this course, and enter:
+Enter the following to create the virtualenv, and store it in the 'env' directory:
 
 ```bash
 virtualenv env
 ```
 
-Now, install the requirements, which include python tools for data science and machine learning:
+Now, install the requirements:
 
 ```bash
 pip install -r requirements.txt
